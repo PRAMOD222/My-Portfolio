@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Head from "next/head";
 import { useState } from 'react';
 
-
 export default function Home() {
 
   let rword
@@ -14,11 +13,11 @@ export default function Home() {
   }, 3000);
 
   return (
-    <div >
+    <div>
       <Head>
       </Head>
-      <main className='bg-zinc-950 h-[89vh] dark:bg-white'>
-        <section className='main text-white flex flex-col md:flex md:flex-row lg:flex lg:flex-row items-center justify-center '>
+      <main className='bg-zinc-950 h-[89vh]'>
+        <section className='main text-white flex  items-center justify-center'>
 
 
           <div className='border-2 border-orange-500 m-4'>
@@ -31,7 +30,7 @@ export default function Home() {
             <h4 className='m-2 text-2xl '>Creative <span className='text-orange-400'>{word} </span></h4>
             <div className="btn-cont mt-8">
               <button class="bg-stone-800 border border-orange-400 hover:bg-orange-400 text-white font-bold py-3 px-10 rounded-full m-2">Button</button>
-              <button class="bg-orange-400 border border-orange-400 hover:bg-stone-800 hover:border hover:border-orange-400 text-white font-bold py-3 px-10 rounded-full m-2">Button</button>
+              <button class="bg-orange-400 hover:bg-stone-800 hover:border hover:border-orange-400 text-white font-bold py-3 px-10 rounded-full m-2">Button</button>
             </div>
           </div>
         </section>
