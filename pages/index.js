@@ -30,8 +30,8 @@ export default function Home() {
             <h4 className='m-2'>Code your vision into Reality</h4>
             <h4 className='m-2 text-2xl '>Creative <span className='text-orange-400'>{word} </span></h4>
             <div className="btn-cont mt-8">
-              <button class="bg-stone-800 border border-orange-400 hover:bg-orange-400 text-white font-bold py-3 px-10 rounded-full m-2">Button</button>
-              <button class="bg-orange-400 border border-orange-400 hover:bg-stone-800 hover:border hover:border-orange-400 text-white font-bold py-3 px-10 rounded-full m-2">Button</button>
+              <button className="bg-stone-800 border border-orange-400 hover:bg-orange-400 text-white font-bold py-3 px-10 rounded-full m-2">Button</button>
+              <button className="bg-orange-400 border border-orange-400 hover:bg-stone-800 hover:border hover:border-orange-400 text-white font-bold py-3 px-10 rounded-full m-2">Button</button>
             </div>
           </div>
         </section>
