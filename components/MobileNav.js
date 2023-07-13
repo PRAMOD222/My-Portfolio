@@ -1,13 +1,19 @@
 import Link from 'next/link'
-import { useState } from 'react';
+import { useState,  useContext } from 'react';
 import Image from "next/image";
+import DarkModeContext from '../components/DarkModeContext';
 
 
 const Sidebar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const { isDarkMode, setIsDarkMode } = useContext(DarkModeContext);
+
+    const handleDarkModeToggle = () => {
+        setIsDarkMode(prevMode => !prevMode);
+      };
     return (
         <>
-            <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-orange-500 body-font mt-2 ml-2">
+            <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-orange-500 body-font mt-2 ml-2 ">
                 <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
                     {isOpen ? (
                         <path
@@ -41,7 +47,9 @@ const Sidebar = () => {
                         <Link onClick={() => setIsOpen(false)} href={'/contact'} className="mr-5 font-semibold px-4 py-6  text-2xl">Contacts</Link>
                         <Link onClick={() => setIsOpen(false)} href={'/projects'} className="mr-5 font-semibold px-4 py-6  text-2xl">Projects</Link>
                     </nav>
-
+                    <button className='mr-5 font-semibold px-4 py-6  text-2xl text-orange-400 body-font' onClick={handleDarkModeToggle}>
+                            {isDarkMode ? "Light Mode" : "Dark Mode"}
+                    </button>
                 </div>
             </aside>
         </>

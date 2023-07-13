@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ProgressBar from '../components/ProgressBar';
+import DarkModeContext from '../components/DarkModeContext';
 
 const about = () => {
+    const { isDarkMode } = useContext(DarkModeContext);
     return (
-        <div className='bg-zinc-950 text-white'>
-            <div className="border border-black">
+        <div className={isDarkMode ? "dark" : ""}>
+        <div className='bg-zinc-950 text-white dark:bg-white dark:text-black'>
+            <div className="">
                 <div className="">
-                    <h1 className="flex justify-center text-2xl mt-3 md:text-4xl">PRAMOD <span className="text-orange-400 ml-3"> KESARKAR</span></h1>
+                    <h1 className="flex justify-center text-2xl pt-3 md:text-4xl">PRAMOD <span className="text-orange-400 ml-3"> KESARKAR</span></h1>
                     <h6 className="flex justify-center mt-4 text-xs md:text-xl"><span className="text-orange-400 mr-1">---</span> I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I
                         DO <span className="text-orange-400 ml-1">---</span></h6>
                 </div>
@@ -168,6 +171,7 @@ const about = () => {
                 </div>
             </div>
 
+        </div>
         </div>
     )
 }

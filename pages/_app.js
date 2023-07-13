@@ -2,9 +2,11 @@ import '@/styles/globals.css'
 import DesktopNav from '../components/DesktopNav'
 import MobileNav from '../components/MobileNav'
 import { use, useEffect, useState } from 'react';
+import DarkModeContext from '../components/DarkModeContext';
 
 function App({ Component, pageProps }) {
 
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -30,8 +32,10 @@ function App({ Component, pageProps }) {
   }, []);
 
   return <>
-    {isMobile ? <MobileNav /> : <DesktopNav />}
-    <Component {...pageProps} />
+    <DarkModeContext.Provider value={{ isDarkMode, setIsDarkMode }}>
+      {isMobile ? <MobileNav /> : <DesktopNav />}
+      <Component {...pageProps} />
+    </DarkModeContext.Provider>
   </>
 }
 export default App;

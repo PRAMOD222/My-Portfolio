@@ -3,8 +3,5 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = {
-  basePath: '/your-repository',
-  assetPrefix: '/your-repository/',
-  nextConfig
-}; 
+module.exports = nextConfig
+
