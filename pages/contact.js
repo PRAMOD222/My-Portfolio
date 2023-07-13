@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useContext } from 'react'
+import DarkModeContext from '../components/DarkModeContext';
+import { BsFillSendFill } from 'react-icons/bs';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
-  
+  const { isDarkMode } = useContext(DarkModeContext);
+
+  const handleSubmit = () => toast.success(' Message sent Sucssefully!', {
+    position: "bottom-left",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+  });
+
   return (
-    <>
-      <section className="bg-zinc-950 text-white overflow-hidden relative z-10">
+    <div className={isDarkMode ? "dark" : ""}>
+      <section className="bg-zinc-950 text-white overflow-hidden relative z-10 dark:bg-white dark:text-black">
         <div className="sm:m-20 md:m-20 lg:m-20 m-6">
           <div className="flex flex-wrap -mx-4 lg:justify-between ">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -82,7 +98,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="relative p-8 bg-zinc-800  rounded-lg shadow-lg sm:p-12 ">
+              <div className="relative p-8 bg-zinc-800  rounded-lg shadow-lg sm:p-12 dark:bg-gray-200 dark:border-black">
                 <form className="">
                   <ContactInputBox
                     type="text"
@@ -106,17 +122,26 @@ const Contact = () => {
                     name="details"
                     defaultValue=""
                   />
-                  <div>
-                    <button
-                      type="submit"
-                      className="w-full p-3 bg-zinc-900 text-orange-500 transition border rounded border-orange-500 hover:bg-opacity-90 hover:bg-orange-400 hover:text-white"
-                    >
-                      Send Message
-                    </button>
-                  </div>
                 </form>
                 <div>
-                  <span className="absolute -top-10 -right-9 z-[-1]">
+                  <button onClick={handleSubmit} className="w-full p-3 bg-zinc-900 text-orange-500 transition border rounded border-orange-500 hover:bg-opacity-90 hover:bg-orange-400 hover:text-white dark:bg-gray-300 dark:hover:text-black dark:hover:bg-orange-400">
+                    Send Message <BsFillSendFill className="inline-block mb-1 ml-2" />
+                  </button>
+                  <ToastContainer
+                    position="bottom-left"
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="light"
+                  />
+                </div>
+                <div>
+                  {/* <span className="absolute -top-10 -right-9 z-[-1]">
                     <svg
                       width={100}
                       height={100}
@@ -131,7 +156,7 @@ const Contact = () => {
                         fill="#3056D3"
                       />
                     </svg>
-                  </span>
+                  </span> */}
                   <span className="absolute -right-10 top-[90px] z-[-1]">
                     <svg
                       width={34}
@@ -146,6 +171,7 @@ const Contact = () => {
                         r="1.66667"
                         transform="rotate(180 31.9993 132)"
                         fill="#13C296"
+
                       />
                       <circle
                         cx="31.9993"
@@ -928,7 +954,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
@@ -942,7 +968,7 @@ const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
           rows={row}
           placeholder={placeholder}
           name={name}
-          className="border-[f0f0f0] w-full resize-none rounded border py-3 px-[14px] text-base text-body-color outline-none focus:border-primary focus-visible:shadow-none border-orange-500 bg-zinc-900"
+          className="border-[f0f0f0] w-full resize-none rounded border py-3 px-[14px] text-base text-body-color outline-none focus:border-primary focus-visible:shadow-none border-orange-500 bg-zinc-900 dark:bg-gray-300"
           defaultValue={defaultValue}
         />
       </div>
@@ -958,7 +984,7 @@ const ContactInputBox = ({ type, placeholder, name }) => {
           type={type}
           placeholder={placeholder}
           name={name}
-          className="border-[f0f0f0] w-full rounded border py-3 px-[14px] text-base text-body-color outline-none focus:border-primary focus-visible:shadow-none border-orange-500 bg-zinc-900 focus:bg-zinc-900 appearance-none"
+          className="border-[f0f0f0] w-full rounded border py-3 px-[14px] text-base text-body-color outline-none focus:border-primary focus-visible:shadow-none border-orange-500 bg-zinc-900 focus:bg-zinc-900 appearance-none dark:bg-gray-300 dark:text-black dark:focus:text-black"
           style={{
             WebkitAppearance: "none",
             backgroundClip: "padding-box",

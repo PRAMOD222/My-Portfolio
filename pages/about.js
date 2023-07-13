@@ -1,6 +1,11 @@
 import React, { useContext } from 'react'
-import ProgressBar from '../components/ProgressBar';
 import DarkModeContext from '../components/DarkModeContext';
+import ProgressBar from '../components/ProgressBar';
+
+import { FaUserGraduate, FaCss3Alt, FaReact, FaAngular, FaNodeJs, FaGithubSquare } from 'react-icons/fa';
+import { BiCodeBlock, BiLogoJavascript } from 'react-icons/bi';
+import { AiFillHtml5 } from 'react-icons/ai';
+import { SiNextdotjs, SiExpress, SiTypescript, SiMongodb, SiMysql } from 'react-icons/si';
 
 const about = () => {
     const { isDarkMode } = useContext(DarkModeContext);
@@ -64,7 +69,7 @@ const about = () => {
 
                 <div className="sm:flex sm:flex-col flex flex-col md:flex md:flex-row lg:flex lg:flex-row justify-center mt-2">
                     <div className="ml-2 md:w-1/2 md:mx-12 lg:w-1/2 lg:mx-12">
-                        <h1 className='text-2xl text-orange-400 mx-3'>Education</h1>
+                        <h1 className='text-2xl text-orange-400 mx-3'><FaUserGraduate className="inline-block mb-1 mr-2"/>Education</h1>
                         <div className="border-b-2 border-orange-500 mx-3 my-2">
                             <h6 className="date">2020 - 2023</h6>
                             <h2 className="text-xl text-orange-400">B TECH DEGREE</h2>
@@ -89,7 +94,7 @@ const about = () => {
                     </div>
 
                     <div className="ml-2 md:w-1/2 md:mx-12 lg:w-1/2 lg:mx-12">
-                        <h1 className='text-2xl text-orange-400 mx-3'>Projects</h1>
+                        <h1 className='text-2xl text-orange-400 mx-3'><BiCodeBlock className="inline-block mb-1 mr-2"/>Projects</h1>
                         <div className="border-b-2 border-orange-500 mx-3 my-2">
                             <h2 className="text-xl text-orange-400">BusKaro Bus location tracking system</h2>
                             <h6 className="date">06 - 2023</h6>
@@ -114,57 +119,57 @@ const about = () => {
                 <div className="md:mx-12 lg:mx-12 mx-4">
                     <div className="md:flex lg:flex xl:flex">
                         <div className="md:w-1/3 lg:w-1/3 md:mx-3 md:my-5 lg:mx-3 lg:my-5 mx-2 my-4">
-                            <p className='m-2'>HTML</p>
+                            <p className='m-2'>HTML<AiFillHtml5 className="inline-block mb-1 ml-2"/></p>
                             <ProgressBar prog={90} />
                         </div>
                         <div className="md:w-1/3 lg:w-1/3 md:mx-3 md:my-5 lg:mx-3 lg:my-5 mx-2 my-4">
-                            <p className='m-2'>CSS</p>
+                            <p className='m-2'>CSS <FaCss3Alt className="inline-block mb-1 ml-2"/></p>
                             <ProgressBar prog={80} />
                         </div>
                         <div className="md:w-1/3 lg:w-1/3 md:mx-3 md:my-5 lg:mx-3 lg:my-5 mx-2 my-4">
-                            <p className='m-2'>JavaScript</p>
+                            <p className='m-2'>JavaScript <BiLogoJavascript className="inline-block mb-1 ml-2"/></p>
                             <ProgressBar prog={85} />
                         </div>
                     </div>
                     <div className="md:flex lg:flex xl:flex">
                         <div className="md:w-1/3 lg:w-1/3 md:mx-3 md:my-5 lg:mx-3 lg:my-5 mx-2 my-4">
-                            <p className='m-2'>React</p>
+                            <p className='m-2'>React <FaReact className="inline-block mb-1 ml-2"/></p>
                             <ProgressBar prog={80} />
                         </div>
                         <div className="md:w-1/3 lg:w-1/3 md:mx-3 md:my-5 lg:mx-3 lg:my-5 mx-2 my-4">
-                            <p className='m-2'>Anguler</p>
+                            <p className='m-2'>Angular <FaAngular className="inline-block mb-1 ml-2"/></p>
                             <ProgressBar prog={70} />
                         </div>
                         <div className="md:w-1/3 lg:w-1/3 md:mx-3 md:my-5 lg:mx-3 lg:my-5 mx-2 my-4">
-                            <p className='m-2'>Next.js</p>
+                            <p className='m-2'>Next.js <SiNextdotjs className="inline-block mb-1 ml-2"/></p>
                             <ProgressBar prog={80} />
                         </div>
                     </div>
                     <div className="md:flex lg:flex xl:flex">
                         <div className="md:w-1/3 lg:w-1/3 md:mx-3 md:my-5 lg:mx-3 lg:my-5 mx-2 my-4">
-                            <p className='m-2'>Node.js</p>
+                            <p className='m-2'>Node.js <FaNodeJs className="inline-block mb-1 ml-2"/></p>
                             <ProgressBar prog={70} />
                         </div>
                         <div className="md:w-1/3 lg:w-1/3 md:mx-3 md:my-5 lg:mx-3 lg:my-5 mx-2 my-4">
-                            <p className='m-2'>Express.js</p>
+                            <p className='m-2'>Express.js <SiExpress className="inline-block mb-1 ml-2"/></p>
                             <ProgressBar prog={70} />
                         </div>
                         <div className="md:w-1/3 lg:w-1/3 md:mx-3 md:my-5 lg:mx-3 lg:my-5 mx-2 my-4">
-                            <p className='m-2'>TypeScript</p>
+                            <p className='m-2'>TypeScript <SiTypescript className="inline-block mb-1 ml-2"/></p>
                             <ProgressBar prog={60} />
                         </div>
                     </div>
                     <div className="md:flex lg:flex xl:flex">
                         <div className="md:w-1/3 lg:w-1/3 md:mx-3 md:my-5 lg:mx-3 lg:my-5 mx-2 my-4">
-                            <p className='m-2'>MongoDB</p>
+                            <p className='m-2'>MongoDB <SiMongodb className="inline-block mb-1 ml-2"/></p>
                             <ProgressBar prog={80} />
                         </div>
                         <div className="md:w-1/3 lg:w-1/3 md:mx-3 md:my-5 lg:mx-3 lg:my-5 mx-2 my-4">
-                            <p className='m-2'>SQL</p>
+                            <p className='m-2'>SQL <SiMysql className="inline-block mb-1 ml-2"/></p>
                             <ProgressBar prog={60} />
                         </div>
                         <div className="md:w-1/3 lg:w-1/3 md:mx-3 md:my-5 lg:mx-3 lg:my-5 mx-2 my-4">
-                            <p className='m-2'>GitHub</p>
+                            <p className='m-2'>GitHub <FaGithubSquare className="inline-block mb-1 ml-2"/></p>
                             <ProgressBar prog={80} />
                         </div>
                     </div>

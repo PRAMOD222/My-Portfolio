@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import DarkModeContext from '../components/DarkModeContext';
+import { BsFillSunFill, BsFillMoonStarsFill, BsPersonFill } from 'react-icons/bs';
 
 const Navbar = () => {
     const { isDarkMode, setIsDarkMode } = useContext(DarkModeContext);
@@ -14,7 +15,7 @@ const Navbar = () => {
         <div className={`my-component ${isDarkMode ? "dark" : ""} sticky top-0 z-50`}>
             <div className=' bg-zinc-950  dark:bg-white'>
                 <header className="text-orange-400 body-font dark:text-black">
-                    <div className="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
+                    <div className="container mx-auto flex justify-between p-3 flex-col md:flex-row items-center">
                         <Link href={'/'} className="flex title-font font-medium items-center  md:mb-0">
                             <Image src="/logo.png" alt="Picture of the author" width={180} height={10} />
                         </Link>
@@ -25,7 +26,7 @@ const Navbar = () => {
                             <Link href={'/projects'} className="mr-5 hover:text-orange-600 font-semibold">Projects</Link>
                         </nav>
                         <button className='font-semibold hover:text-orange-600' onClick={handleDarkModeToggle}>
-                            {isDarkMode ? "Light Mode" : "Dark Mode"}
+                            {isDarkMode ? <BsFillMoonStarsFill className="text-lg"/> : <BsFillSunFill className="text-lg"/>}
                         </button>
                     </div>
                 </header>
