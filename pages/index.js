@@ -19,7 +19,7 @@ export default function Home() {
 
 
           <div className='border-2 border-orange-500 m-4'>
-            <Image src="/Photo.jpg" alt="Picture of the author" width={280} height={10} />
+            <Image src="pramod222.github.io/My-Portfolio/Photo.jpg" alt="Picture of the author" width={280} height={10} />
           </div>
 
           <div className="intro  m-4 font-bold">

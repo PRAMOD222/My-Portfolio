@@ -17,7 +17,7 @@ const Navbar = () => {
                 <header className="text-orange-400 body-font dark:text-black">
                     <div className="container mx-auto flex justify-between p-3 flex-col md:flex-row items-center">
                         <Link href={'/'} className="flex title-font font-medium items-center  md:mb-0">
-                            <Image src="/logo.png" alt="Picture of the author" width={180} height={10} />
+                            <Image src="pramod222.github.io/My-Portfolio/logo.png" alt="Picture of the author" width={180} height={10} />
                         </Link>
                         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
                             <Link href={'/about'} className="mr-5 hover:text-orange-600 font-semibold">About</Link>
