@@ -3,7 +3,9 @@ import Image from 'next/image'
 import DarkModeContext from '../components/DarkModeContext';
 
 const portfolio = () => {
+
   const { isDarkMode } = useContext(DarkModeContext);
+  
   const handleOnClick = ()=>{
     console.log("clicked");
   }

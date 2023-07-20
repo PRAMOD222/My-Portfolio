@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, {useContext } from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import DarkModeContext from '../components/DarkModeContext';
-import { BsFillSunFill, BsFillMoonStarsFill, BsPersonFill } from 'react-icons/bs';
+import { BsFillSunFill, BsFillMoonStarsFill} from 'react-icons/bs';
 
 const Navbar = () => {
     const { isDarkMode, setIsDarkMode } = useContext(DarkModeContext);
@@ -23,7 +23,6 @@ const Navbar = () => {
                             <Link href={'/about'} className="mr-5 hover:text-orange-600 font-semibold">About</Link>
                             <Link href={'/portfolio'} className="mr-5 hover:text-orange-600 font-semibold">Portfolio</Link>
                             <Link href={'/contact'} className="mr-5 hover:text-orange-600 font-semibold">Contacts</Link>
-                            <Link href={'/projects'} className="mr-5 hover:text-orange-600 font-semibold">Projects</Link>
                         </nav>
                         <button className='font-semibold hover:text-orange-600' onClick={handleDarkModeToggle}>
                             {isDarkMode ? <BsFillMoonStarsFill className="text-lg"/> : <BsFillSunFill className="text-lg"/>}

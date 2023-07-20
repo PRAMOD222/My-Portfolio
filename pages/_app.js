@@ -2,7 +2,7 @@ import '@/styles/globals.css'
 import DesktopNav from '../components/DesktopNav'
 import MobileNav from '../components/MobileNav'
 import Footer from '../components/Footer'
-import { use, useEffect, useState } from 'react';
+import {useEffect, useState } from 'react';
 import DarkModeContext from '../components/DarkModeContext';
 import LoadingBar from 'react-top-loading-bar'
 import { useRouter } from 'next/router';

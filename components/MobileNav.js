@@ -45,7 +45,6 @@ const Sidebar = () => {
                         <Link onClick={() => setIsOpen(false)} href={'/about'} className="mr-5 font-semibold px-4 py-6 text-2xl">About</Link>
                         <Link onClick={() => setIsOpen(false)} href={'/portfolio'} className="mr-5 font-semibold px-4 py-6  text-2xl">Portfolio</Link>
                         <Link onClick={() => setIsOpen(false)} href={'/contact'} className="mr-5 font-semibold px-4 py-6  text-2xl">Contacts</Link>
-                        <Link onClick={() => setIsOpen(false)} href={'/projects'} className="mr-5 font-semibold px-4 py-6  text-2xl">Projects</Link>
                     </nav>
                     <button className='mr-5 font-semibold px-4 py-6  text-2xl text-orange-400 body-font' onClick={handleDarkModeToggle}>
                             {isDarkMode ? "Light Mode" : "Dark Mode"}

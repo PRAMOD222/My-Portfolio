@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Head from "next/head";
-import { useState, useContext } from 'react';
+import {useContext } from 'react';
 import DarkModeContext from '../components/DarkModeContext';
 import { TypeAnimation } from 'react-type-animation';
 import Link from 'next/link';
