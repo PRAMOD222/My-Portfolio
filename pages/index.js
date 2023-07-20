@@ -50,7 +50,7 @@ export default function Home() {
               <button className="bg-stone-800 border border-orange-400 hover:bg-orange-400 text-white dark:hover:text-black font-bold py-3 px-14 rounded-full m-2 dark:text-white"><Link href={'/about'}><BsPersonFill className="inline-block mb-1 mr-2"/>About Me</Link></button>
               {/* <button className="bg-orange-400 border border-orange-400 hover:bg-stone-800 hover:border hover:border-orange-400 dark:hover:text-white  text-white dark:text-black font-bold py-3 px-10 rounded-full m-2">Download MY CV</button> */}
               <a
-              href="/Pramod_Kesarkar.pdf" // Replace with the actual filename of your CV file
+              href="https://pramod222.github.io/My-Portfolio/Pramod_Kesarkar.pdf" // Replace with the actual filename of your CV file
               download
               className="bg-orange-400 border border-orange-400 hover:bg-stone-800 hover:border hover:border-orange-400 dark:hover:text-white text-white dark:text-black font-bold py-3 px-10 rounded-full m-2 flex justify-center "
             >
