@@ -2,7 +2,7 @@ import React,{useContext} from 'react'
 import Image from 'next/image'
 import DarkModeContext from '../components/DarkModeContext';
 
-const portfolio = () => {
+const Portfolio = () => {
 
   const { isDarkMode } = useContext(DarkModeContext);
   
@@ -43,4 +43,4 @@ const portfolio = () => {
   )
 }
 
-export default portfolio
+export default Portfolio

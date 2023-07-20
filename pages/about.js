@@ -7,7 +7,7 @@ import { BiCodeBlock, BiLogoJavascript } from 'react-icons/bi';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { SiNextdotjs, SiExpress, SiTypescript, SiMongodb, SiMysql } from 'react-icons/si';
 
-const about = () => {
+const About = () => {
     const { isDarkMode } = useContext(DarkModeContext);
     return (
         <div className={isDarkMode ? "dark" : ""}>
@@ -181,4 +181,4 @@ const about = () => {
     )
 }
 
-export default about
+export default About
