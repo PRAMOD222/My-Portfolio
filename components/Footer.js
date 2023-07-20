@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import Link from 'next/link'
-import Image from 'next/link'
+import Image from 'next/image'
 import DarkModeContext from '../components/DarkModeContext';
 
 import {FaGithubSquare, FaLinkedin, FaInstagramSquare } from 'react-icons/fa';

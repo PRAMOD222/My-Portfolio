@@ -51,3 +51,4 @@ function App({ Component, pageProps }) {
   </>
 }
 export default App;
+//This error happened while generating the page. Any console logs will be displayed in the terminal window.
