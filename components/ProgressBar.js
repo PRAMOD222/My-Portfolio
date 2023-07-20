@@ -12,14 +12,15 @@ const ProgressBar = (props) => {
         setIsIntersecting(true);
       }
     });
+    const value = progressBarRef.current;
 
-    if (progressBarRef.current) {
-      observer.observe(progressBarRef.current);
+    if (value) {
+      observer.observe(value);
     }
 
     return () => {
-      if (progressBarRef.current) {
-        observer.unobserve(progressBarRef.current);
+      if (value) {
+        observer.unobserve(value);
       }
     };
   }, []);

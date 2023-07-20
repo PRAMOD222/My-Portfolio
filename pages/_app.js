@@ -34,7 +34,7 @@ function App({ Component, pageProps }) {
     return () => {
       mediaQuery.removeEventListener('change', handleChange);
     };
-  }, []);
+  }, [router.events]);
 
   return <>
     <DarkModeContext.Provider value={{ isDarkMode, setIsDarkMode }}>
