@@ -39,10 +39,10 @@ const Footer = () => {
                             <h2 className="title-font font-medium text-orange-500 tracking-widest text-sm mb-3">BLOGS</h2>
                             <nav className="list-none mb-10">
                                 <li>
-                                    <a className="dark:text-slate-700 text-slate-400  hover:text-orange-600 dark:hover:text-orange-600 cursor-pointer">How to use GitHub</a>
+                                    <a href='https://pramod222.github.io/GitHub_Blog/' className="dark:text-slate-700 text-slate-400  hover:text-orange-600 dark:hover:text-orange-600 cursor-pointer">How to use GitHub</a>
                                 </li>
                                 <li>
-                                    <a className="dark:text-slate-700 text-slate-400  hover:text-orange-600 dark:hover:text-orange-600 cursor-pointer">Getimg started with Next.js</a>
+                                    <a href='https://pramod222.github.io/React_Blog/index.html' className="dark:text-slate-700 text-slate-400  hover:text-orange-600 dark:hover:text-orange-600 cursor-pointer">Getimg started with React.js</a>
                                 </li>
                                 <li>
                                     <a className="dark:text-slate-700 text-slate-400  hover:text-orange-600 dark:hover:text-orange-600 cursor-pointer">Everything you should know about a Website</a>
