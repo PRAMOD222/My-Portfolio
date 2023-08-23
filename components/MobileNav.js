@@ -39,7 +39,7 @@ const Sidebar = () => {
                         </svg>
                     </button>
                     <Link onClick={() => setIsOpen(false)} href={'/'} className="flex title-font font-medium items-center  md:mb-0">
-                        <Image src="https://pramod222.github.io/My-Portfolio/logo.png" alt="Picture of the author" width={180} height={10} />
+                        <Image src="/logo.png" alt="Picture of the author" width={180} height={10} />
                     </Link>
                     <nav className="flex flex-col text-orange-400 body-font">
                         <Link onClick={() => setIsOpen(false)} href={'/about'} className="mr-5 font-semibold px-4 py-6 text-2xl">About</Link>

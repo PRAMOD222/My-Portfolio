@@ -10,11 +10,11 @@ const Footer = () => {
     const { isDarkMode } = useContext(DarkModeContext);
     return (
         <div className={isDarkMode ? "dark" : ""}>
-            <footer className="text-white body-font bg-zinc-900 dark:bg-gray-200">
+            <footer className="text-white body-font bg-zinc-800 dark:bg-gray-200">
                 <div className="container px-5 py-8 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                     <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-6 mt-20">
                         <Link href={'/'} className="flex title-font font-medium items-center  md:mb-0">
-                            <Image src="https://pramod222.github.io/My-Portfolio/logo.png" alt="Picture of the author" width={180} height={10} />
+                            <Image src="/logo.png" alt="Picture of the author" width={180} height={10} />
                         </Link>
                         
                     </div>
@@ -58,7 +58,7 @@ const Footer = () => {
                 <div className="bg-zinc-950 dark:bg-gray-400">
                     <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                         <p className="text-gray-500 text-sm text-center sm:text-left dark:text-zinc-800">© 2023 Pramod —
-                            <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" className="dark:text-slate-700 text-slate-400  ml-1" target="_blank">@PK Developer</a>
+                            <a href="https://twitter.com/" rel="noopener noreferrer" className="dark:text-slate-700 text-slate-400  ml-1" target="_blank">@PK Developer</a>
                         </p>
                         <span className="inline-flex sm:ml-auto sm:mt-0  justify-center sm:justify-start">
                             <a href={"https://github.com/PRAMOD222"} className="text-gray-500">
