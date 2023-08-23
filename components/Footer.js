@@ -14,7 +14,7 @@ const Footer = () => {
                 <div className="container px-5 py-8 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                     <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-6 mt-20">
                         <Link href={'/'} className="flex title-font font-medium items-center  md:mb-0">
-                            <Image src="/logo.png" alt="Picture of the author" width={180} height={10} />
+                            <Image src="https://pramod222.github.io/My-Portfolio/logo.png" alt="Picture of the author" width={180} height={10} />
                         </Link>
                         
                     </div>

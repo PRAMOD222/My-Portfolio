@@ -22,7 +22,7 @@ export default function Home() {
 
 
           <div className='border-2 border-orange-500 m-4'>
-            <Image src="/Photo.jpg" alt="Picture of the author" width={280} height={10} />
+            <Image src="https://pramod222.github.io/My-Portfolio/Photo.jpg" alt="Picture of the author" width={280} height={10} />
           </div>
 
           <div className="intro  m-4 font-bold">
@@ -93,9 +93,6 @@ export default function Home() {
             <h2 className='text-xl font-bold'>Graphics</h2>
             <p>Whether its logos, banners, or illustrations, I craft captivating graphic designs that convey your message effectively. I focus on combining creativity with strategic visuals.</p>
           </div>
-
-
-
         </div>
       </section>
     </div>
