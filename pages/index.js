@@ -91,7 +91,7 @@ export default function Home() {
             
             <span className='flex  align-middle justify-center'><MdOutlineGraphicEq className='text-6xl' /></span>
             <h2 className='text-xl font-bold'>Graphics</h2>
-            <p>Whether it's logos, banners, or illustrations, I craft captivating graphic designs that convey your message effectively. I focus on combining creativity with strategic visuals.</p>
+            <p>Whether its logos, banners, or illustrations, I craft captivating graphic designs that convey your message effectively. I focus on combining creativity with strategic visuals.</p>
           </div>
 
 
