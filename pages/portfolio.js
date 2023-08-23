@@ -26,15 +26,15 @@ const Portfolio = () => {
         </section>
 
         <section className='md:flex md:justify-center'>
-          <div className="w-fit md:m-5 m-2 "> <Image className='border-2 border-orange-500 rounded-sm transition ease-in-out delay-40 hover:-translate-y-1 hover:scale-110 duration-300' src="/P1.png" alt="Picture of the author" onClick={handleOnClick} width={380} height={10} /> </div>
-          <div className="w-fit md:m-5 m-2 "> <Image className='border-2 border-orange-500 rounded-sm transition ease-in-out delay-40 hover:-translate-y-1 hover:scale-110 duration-300' src="/P2.png" alt="Picture of the author" width={380} height={10} /> </div>
-          <div className="w-fit md:m-5 m-2 "> <Image className='border-2 border-orange-500 rounded-sm transition ease-in-out delay-40 hover:-translate-y-1 hover:scale-110 duration-300' src="/P3.png" alt="Picture of the author" width={380} height={10} /> </div>
+          <div className="w-fit md:m-5 m-2 "> <Image className='border-2 border-orange-500 rounded-sm transition ease-in-out delay-40 hover:-translate-y-1 hover:scale-110 duration-300' src="https://pramod222.github.io/My-Portfolio//P1.png" alt="Picture of the author" onClick={handleOnClick} width={380} height={10} /> </div>
+          <div className="w-fit md:m-5 m-2 "> <Image className='border-2 border-orange-500 rounded-sm transition ease-in-out delay-40 hover:-translate-y-1 hover:scale-110 duration-300' src="https://pramod222.github.io/My-Portfolio//P2.png" alt="Picture of the author" width={380} height={10} /> </div>
+          <div className="w-fit md:m-5 m-2 "> <Image className='border-2 border-orange-500 rounded-sm transition ease-in-out delay-40 hover:-translate-y-1 hover:scale-110 duration-300' src="https://pramod222.github.io/My-Portfolio//P3.png" alt="Picture of the author" width={380} height={10} /> </div>
         </section>
 
         <section className='md:flex md:justify-center'>
-          <div className="w-fit md:m-5 m-2 "> <Image className='border-2 border-orange-500 rounded-sm transition ease-in-out delay-40 hover:-translate-y-1 hover:scale-110 duration-300' src="/P1.png" alt="Picture of the author" onClick={handleOnClick} width={380} height={10} /> </div>
-          <div className="w-fit md:m-5 m-2 "> <Image className='border-2 border-orange-500 rounded-sm transition ease-in-out delay-40 hover:-translate-y-1 hover:scale-110 duration-300' src="/P2.png" alt="Picture of the author" width={380} height={10} /> </div>
-          <div className="w-fit md:m-5 m-2 "> <Image className='border-2 border-orange-500 rounded-sm transition ease-in-out delay-40 hover:-translate-y-1 hover:scale-110 duration-300' src="/P3.png" alt="Picture of the author" width={380} height={10} /> </div>
+          <div className="w-fit md:m-5 m-2 "> <Image className='border-2 border-orange-500 rounded-sm transition ease-in-out delay-40 hover:-translate-y-1 hover:scale-110 duration-300' src="https://pramod222.github.io/My-Portfolio//P1.png" alt="Picture of the author" onClick={handleOnClick} width={380} height={10} /> </div>
+          <div className="w-fit md:m-5 m-2 "> <Image className='border-2 border-orange-500 rounded-sm transition ease-in-out delay-40 hover:-translate-y-1 hover:scale-110 duration-300' src="https://pramod222.github.io/My-Portfolio//P2.png" alt="Picture of the author" width={380} height={10} /> </div>
+          <div className="w-fit md:m-5 m-2 "> <Image className='border-2 border-orange-500 rounded-sm transition ease-in-out delay-40 hover:-translate-y-1 hover:scale-110 duration-300' src="https://pramod222.github.io/My-Portfolio//P3.png" alt="Picture of the author" width={380} height={10} /> </div>
         </section>
         
       </main>
