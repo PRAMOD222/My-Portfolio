@@ -67,7 +67,7 @@ const Footer = () => {
                             <a href={"https://www.linkedin.com/in/pramod-kesarkar-38b87922a/"} className="ml-3 text-gray-500">
                             <FaLinkedin className="text-gray-300 text-3xl dark:text-gray-800"/>
                             </a>
-                            <a href={"https://www.instagram.com/pramod_kesarkar1/"} className="ml-3 text-gray-500">
+                            <a href={"https://www.instagram.com/pramodkesarkar.dev/"} className="ml-3 text-gray-500">
                             <FaInstagramSquare className="text-gray-300 text-3xl dark:text-gray-800"/>
                             </a>
                             <a className="ml-3 text-gray-500">
